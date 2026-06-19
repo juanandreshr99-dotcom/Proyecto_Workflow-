@@ -2,6 +2,8 @@ name: Mi Primer Workflow
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   saludo:
@@ -9,4 +11,4 @@ jobs:
 
     steps:
       - name: Mostrar mensaje
-        run: echo "Hola desde GitHub Actions"
+        run: echo "se hizo un push a la rama main"
